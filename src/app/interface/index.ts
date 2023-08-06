@@ -17,3 +17,9 @@ export interface IFollowers {
 export interface IImages {
   image: string;
 }
+
+export interface ILeaders {
+  image: string;
+  name: string;
+  rank: string;
+}

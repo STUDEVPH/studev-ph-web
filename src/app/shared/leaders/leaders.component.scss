@@ -16,29 +16,34 @@
     line-height: normal;
     letter-spacing: 1.92px;
   }
-
-  .leaders {
+  .leaders-container {
     display: grid;
-    grid-template-rows: 1fr 0.2fr 0.5fr;
-    color: #fff;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5rem;
 
-    p {
-      font-family: Raleway;
-      font-size: 18px;
-      font-style: normal;
-      font-weight: 600;
-      line-height: normal;
-      letter-spacing: 1.08px;
-    }
+    .leaders {
+      display: grid;
+      grid-template-rows: 1fr 0.2fr 0.5fr;
+      color: #fff;
 
-    em {
-      text-align: center;
-      font-family: Raleway;
-      font-size: 16px;
-      font-style: normal;
-      font-weight: 400;
-      line-height: normal;
-      letter-spacing: 0.96px;
+      p {
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: normal;
+        letter-spacing: 1.08px;
+      }
+
+      em {
+        text-align: center;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 0.96px;
+      }
     }
   }
 }
