@@ -13,3 +13,7 @@ export interface IFollowers {
   total: string;
   location: string;
 }
+
+export interface IImages {
+  image: string;
+}
