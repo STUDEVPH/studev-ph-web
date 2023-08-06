@@ -1,0 +1,44 @@
+.content {
+  height: 50vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  background-color: #ff50ae;
+
+  .title {
+    color: #fff;
+    font-family: Raleway;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: 1.92px;
+  }
+
+  .leaders {
+    display: grid;
+    grid-template-rows: 1fr 0.2fr 0.5fr;
+    color: #fff;
+
+    p {
+      font-family: Raleway;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.08px;
+    }
+
+    em {
+      text-align: center;
+      font-family: Raleway;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.96px;
+    }
+  }
+}
