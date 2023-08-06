@@ -1,0 +1,47 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 93vh;
+  justify-content: center;
+  text-align: center;
+
+  .logo {
+    margin: auto;
+    padding-left: 3rem;
+  }
+
+  .carousel {
+    text-align: left;
+    padding: 9rem 4rem 2rem 2rem;
+
+    h1 {
+      font-family: Raleway;
+      font-size: 4rem;
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    p {
+      font-family: Raleway;
+      font-size: 1rem;
+      font-weight: 500;
+    }
+    .select {
+      display: flex;
+      justify-content: flex-end;
+
+      span {
+        padding: 0.3rem 2rem;
+        flex-shrink: 0;
+        margin-left: 1rem;
+        cursor: pointer;
+        background-color: #d6d5d2;
+        transition: background-color 0.3s ease;
+
+        &.selected {
+          background-color: yellow;
+        }
+      }
+    }
+  }
+}
