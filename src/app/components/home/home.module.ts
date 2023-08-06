@@ -20,7 +20,7 @@ import { GalleryComponent } from 'src/app/shared/gallery/gallery.component';
     TotalFollowersComponent,
     MissionVisionComponent,
     MeetComponent,
-    GalleryComponent
+    GalleryComponent,
   ],
 })
 export class HomeModule {}
