@@ -4,24 +4,20 @@ $background: rgba(246, 246, 246, 0.96);
   background: $background;
   width: 100%;
   padding: 0.5rem 2rem;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
   text-align: center;
-
   position: fixed;
   top: 0;
   z-index: 10;
 
   .logo {
-    width: 48px;
-    height: 48px;
     display: flex;
     justify-content: center;
     align-items: center;
     img {
-      max-width: 3rem;
+      max-width: 10rem;
       justify-content: center;
       align-items: center;
       margin: auto;

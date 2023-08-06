@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { LocationComponent } from 'src/app/shared/location/location.component';
@@ -23,6 +22,7 @@ import { LeadersComponent } from 'src/app/shared/leaders/leaders.component';
     MeetComponent,
     GalleryComponent,
     LeadersComponent,
+    LocationComponent
   ],
 })
 export class HomeModule {}
