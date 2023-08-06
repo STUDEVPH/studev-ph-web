@@ -14,5 +14,6 @@ export class TotalFollowersComponent {
     { box: '', total: '100K', location: 'All over the philippines' },
     { box: '', total: '100K', location: 'All over the philippines' },
     { box: '', total: '100K', location: 'All over the philippines' },
+    { box: '', total: '100K', location: 'All over the philippines' },
   ];
 }
