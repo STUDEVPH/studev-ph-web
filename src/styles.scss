@@ -53,16 +53,7 @@ select {
   font: inherit;
 }
 
-img,
-picture,
-video,
-canvas,
-svg {
-  max-width: 100%;
-}
-
 img {
-  height: auto;
   object-fit: cover;
 }
 
