@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { ICarousel, ISelect } from 'src/app/interfaces';
+import { ICarousel, ISelect } from 'src/app/interface';
 
 @Component({
   selector: 'who-we-are',
