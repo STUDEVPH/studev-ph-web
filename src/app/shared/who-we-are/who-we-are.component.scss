@@ -1,3 +1,6 @@
+// import css
+$primary-yellow: #f9d71c;
+
 .content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -9,39 +12,45 @@
   padding: 0px 64px;
 
   .logo {
-    margin: auto;
-    padding-left: 3rem;
+    width: 400px;
   }
 
   .carousel {
     text-align: left;
 
+    & > div {
+      height: 300px;
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      gap: 1rem;
+
+      font-size: 1rem;
+    }
+
     h1 {
-      font-family: Raleway;
-      font-size: 4rem;
-      font-style: normal;
-      font-weight: 600;
+      font-size: 48px;
+      font-weight: 800;
     }
 
     p {
-      font-family: Raleway;
-      font-size: 1rem;
-      font-weight: 500;
+      line-height: 200%;
     }
+
     .select {
       display: flex;
+      gap: 1rem;
       justify-content: flex-end;
 
       span {
-        padding: 0.3rem 2rem;
-        flex-shrink: 0;
-        margin-left: 1rem;
         cursor: pointer;
+        height: 0.7rem;
+        width: 48px;
+        border-radius: 3px;
         background-color: #d6d5d2;
         transition: background-color 0.3s ease;
 
         &.selected {
-          background-color: yellow;
+          background-color: $primary-yellow;
         }
       }
     }
