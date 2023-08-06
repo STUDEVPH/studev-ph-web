@@ -3,18 +3,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,900;1,200;1,300;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 
-$primary: #009544;
-$error: #ed324f;
+$primary-font: "Raleway", sans-serif;
+$background: rgba(246, 246, 246, 0.96);
+$color: black;
 
-html,
-body {
+$primary-yellow: #fee25d;
+$primary-cyan: #00daf4;
+$primary-pink: #ff5fb5;
+
+$success: #41ff97; // yello
+$error: #ed324f;
+* {
   margin: 0;
   padding: 0;
-  height: 100%;
-  width: 100%;
-  font-family: "Raleway", sans-serif;
   box-sizing: border-box;
-  background: rgba(246, 246, 246, 0.96);
+}
+
+body {
+  font-family: $primary-font;
+  background: $background;
+  color: $color;
+  min-height: 100vh;
+  line-height: 1.5;
 }
 
 /* Chrome, Safari, Edge, Opera */
@@ -28,18 +38,53 @@ input[type="number"] {
   -moz-appearance: textfield;
 }
 
-.btn {
-  background-color: white;
-  min-width: 15rem;
-  min-height: 3.5rem;
-  font-weight: 600;
+button {
+  background: inherit;
+  color: inherit;
   border: none;
-  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
-  border-radius: 0.5rem;
-  padding: 0.75rem 1.5rem;
-  font-size: 1.5rem;
-  cursor: pointer;
   outline: none;
+  border-radius: 5px;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  max-width: 100%;
+}
+
+img {
+  height: auto;
+  object-fit: cover;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.btn {
+  cursor: pointer;
+  background-color: $background;
+  font-size: 1.5rem;
+  font-weight: 600;
+
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
   &.new {
     display: grid;
@@ -55,84 +100,84 @@ input[type="number"] {
   &.focus,
   &.active,
   &:active {
-    background-color: #ffc700;
+    background-color: $primary-yellow;
     border-width: 1px;
   }
 
   &.yellow-l {
-    background-color: #ffc700;
+    background-color: $primary-yellow;
 
     &:hover {
-      background-color: darken(#ffc700, 10%);
+      background-color: darken($primary-yellow, 10%);
     }
   }
 
   &.yellow-m {
-    background-color: #ffc700;
+    background-color: $primary-yellow;
     min-width: 10rem;
     min-height: 3.5rem;
     border-radius: 1.7rem;
     font-size: 1.1rem;
 
     &:hover {
-      background-color: darken(#ffc700, 10%);
+      background-color: darken($primary-yellow, 10%);
     }
   }
 
   &.yellow-s {
-    background-color: #ffc700;
+    background-color: $primary-yellow;
     min-width: 7rem;
     min-height: 2.5rem;
     border-radius: 1.7rem;
     font-size: 1rem;
 
     &:hover {
-      background-color: darken(#ffc700, 10%);
+      background-color: darken($primary-yellow, 10%);
     }
   }
 
   &.pink-l {
-    background-color: #ff0e90;
+    background-color: $primary-pink;
 
     &:hover {
-      background-color: darken(#ff0e90, 10%);
+      background-color: darken($primary-pink, 10%);
     }
   }
 
   &.pink-m {
-    background-color: #ff0e90;
+    background-color: $primary-pink;
     min-width: 10rem;
     min-height: 3.5rem;
     border-radius: 1.7rem;
     font-size: 1.1rem;
 
     &:hover {
-      background-color: darken(#ff0e90, 10%);
+      background-color: darken($primary-pink, 10%);
     }
   }
 
   &.pink-s {
-    background-color: #ff0e90;
+    background-color: $primary-pink;
     min-width: 7rem;
     min-height: 2.5rem;
     border-radius: 0.5rem;
     font-size: 1rem;
 
     &:hover {
-      background-color: darken(#ff0e90, 10%);
+      background-color: darken($primary-pink, 10%);
     }
   }
 
   &.blue-l {
-    background-color: #0ee2ff;
+    background-color: $primary-cyan;
 
     &:hover {
-      background-color: darken(#0ee2ff, 10%);
+      background-color: darken($primary-cyan, 10%);
     }
   }
 
   &.blue-m {
-    background-color: #0ee2ff;
+    background-color: $primary-cyan;
     min-width: 10rem;
     min-height: 3.5rem;
     border-radius: 0.5rem;
@@ -140,53 +185,36 @@ input[type="number"] {
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 
     &:hover {
-      background-color: darken(#0ee2ff, 10%);
+      background-color: darken($primary-cyan, 10%);
     }
   }
 
   &.blue-s {
-    background-color: #0ee2ff;
+    background-color: $primary-cyan;
     min-width: 7rem;
     min-height: 2.5rem;
     border-radius: 0.5rem;
     font-size: 1rem;
 
     &:hover {
-      background-color: darken(#0ee2ff, 10%);
+      background-color: darken($primary-cyan, 10%);
     }
   }
 
   &.green {
-    background-color: green;
+    background-color: $success;
 
     &:hover {
-      background-color: darken(green, 10%);
+      background-color: darken($success, 10%);
     }
   }
 
   &.disabled {
-    background-color: darken(green, 10%);
-  }
-
-  &.square {
-    background-color: darken(green, 10%);
-    display: grid;
-    align-items: center;
-    justify-items: flex-start;
-    text-align: start;
-    padding: 0.5rem 1rem;
-    width: 18rem;
-    height: 7.5rem;
-    font-weight: 400;
-    border-style: solid;
-    border-width: 1px;
-    font-size: 1.5rem;
-    box-shadow: 1px 1px 5px;
-    border-radius: 10px;
+    background-color: darken($success, 10%);
   }
 
   &:disabled {
-    background-color: darken(green, 10%);
+    background-color: darken($success, 10%);
     border: 1px solid !important;
   }
 }
