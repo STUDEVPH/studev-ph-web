@@ -1,13 +1,9 @@
 <div class="images">
   <div class="first-gallery">
-    <img src="../../../assets/jpeg/meet-up/meet4.png" alt="" />
-    <img src="../../../assets/jpeg/meet-up/meet5.png" alt="" />
-    <span></span>
+    <img *ngFor="let control of firstImages" [src]="control.image" alt="" />
   </div>
-  <div><img src="../../../assets/jpeg/meet-up/meet6.png" alt="" /></div>
+  <div><img class="second-gallery" [src]="secondImage" alt="" /></div>
   <div class="third-gallery">
-    <span></span>
-    <img src="../../../assets/jpeg/meet-up/meet7.png" alt="" />
-    <img src="../../../assets/jpeg/meet-up/meet8.png" alt="" />
+    <img *ngFor="let control of thirdImages" [src]="control.image" alt="" />
   </div>
 </div>
