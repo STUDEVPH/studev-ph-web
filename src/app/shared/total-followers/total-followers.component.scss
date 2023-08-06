@@ -1,0 +1,46 @@
+.background {
+  height: 50vh;
+
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  opacity: 2;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    url(../../../assets/png/admin.jpg),
+    lightgray -4.055px -309.879px / 100% 236.191% no-repeat;
+  background-size: cover;
+
+  .total {
+    display: grid;
+    grid-template-columns: 1fr 4fr 1fr;
+    column-gap: 10px;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    color: white;
+    font-family: Raleway;
+    margin-top: 5rem;
+
+    .box {
+      width: 5rem;
+      height: 5rem;
+      border-radius: 0.5rem;
+      background: rgba(186, 186, 186, 0.33);
+      box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      margin: auto;
+      text-align: center;
+      align-items: center;
+    }
+  }
+
+  .description {
+    color: white;
+    font-family: Raleway;
+  }
+}
