@@ -9,6 +9,7 @@ import { MissionVisionComponent } from 'src/app/shared/mission-vision/mission-vi
 import { MeetComponent } from 'src/app/shared/meet/meet.component';
 import { GalleryComponent } from 'src/app/shared/gallery/gallery.component';
 import { LeadersComponent } from 'src/app/shared/leaders/leaders.component';
+import { SocialMediaComponent } from 'src/app/shared/social-media/social-media.component';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -22,7 +23,8 @@ import { LeadersComponent } from 'src/app/shared/leaders/leaders.component';
     MeetComponent,
     GalleryComponent,
     LeadersComponent,
-    LocationComponent
+    LocationComponent,
+    SocialMediaComponent,
   ],
 })
 export class HomeModule {}
