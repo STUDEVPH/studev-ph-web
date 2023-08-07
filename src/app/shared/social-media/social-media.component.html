@@ -1,1 +1,39 @@
-<p>social-media works!</p>
+<div class="content">
+  <div class="social-media">
+    <div class="socials">
+      <div *ngFor="let control of images">
+        <img [src]="control.image" alt="social-media" />
+      </div>
+    </div>
+    <div>
+      <h3>OUR SOCIALS</h3>
+      <p>
+        StuDev PH is dedicated to nurturing a thriving and supportive community
+        for student developers in the Philippines. Our mission is to offer a
+        wide range of educational programs, workshops, and networking
+        opportunities that equip our members with the skills and knowledge
+        needed to excel in the ever-changing world of technology and software
+        development. By empowering students to achieve their aspirations and
+        make positive contributions to society through technological
+        innovations, we aim to create a bright future for the tech industry.
+      </p>
+      <div class="buttons">
+        <span *ngFor="let control of controls" [class]="control.color"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="skills">
+    <div>
+      <h3>NEED TO IMPROVE YOUR SKILLS ?</h3>
+      <p>
+        StuDev PH is dedicated to nurturing a thriving and supportive community
+        for student developers in the Philippines. Our mission is to offer a
+        wide range of educational programs, workshops, and networking
+        opportunities that e
+      </p>
+      <button class="btn pink-s"></button>
+    </div>
+    <div><img src="../../../assets/jpeg/code.png" alt="" /></div>
+  </div>
+</div>

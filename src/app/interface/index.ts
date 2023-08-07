@@ -23,3 +23,13 @@ export interface ILeaders {
   name: string;
   rank: string;
 }
+
+
+export interface IColors {
+  color:string
+}
+
+export interface ISocials {
+  image:string
+}
+
