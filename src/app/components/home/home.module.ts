@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { LocationComponent } from 'src/app/shared/location/location.component';
@@ -9,6 +8,8 @@ import { TotalFollowersComponent } from 'src/app/shared/total-followers/total-fo
 import { MissionVisionComponent } from 'src/app/shared/mission-vision/mission-vision.component';
 import { MeetComponent } from 'src/app/shared/meet/meet.component';
 import { GalleryComponent } from 'src/app/shared/gallery/gallery.component';
+import { LeadersComponent } from 'src/app/shared/leaders/leaders.component';
+import { SocialMediaComponent } from 'src/app/shared/social-media/social-media.component';
 
 @NgModule({
   declarations: [HomeComponent],
@@ -21,6 +22,9 @@ import { GalleryComponent } from 'src/app/shared/gallery/gallery.component';
     MissionVisionComponent,
     MeetComponent,
     GalleryComponent,
+    LeadersComponent,
+    LocationComponent,
+    SocialMediaComponent,
   ],
 })
 export class HomeModule {}
