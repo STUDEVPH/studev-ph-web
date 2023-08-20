@@ -6,8 +6,9 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './mission-vision.component.html',
-  styleUrls: ['./mission-vision.component.scss']
+  styleUrls: ['./mission-vision.component.scss'],
 })
 export class MissionVisionComponent {
-
+  mission = '../../../assets/jpeg/mission.png';
+  vision = '../../../assets/jpeg/mission.png';
 }

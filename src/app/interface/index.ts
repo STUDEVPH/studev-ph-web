@@ -33,3 +33,9 @@ export interface ISocials {
   image:string
 }
 
+export interface INavbar {
+  navigator:string
+}
+
+
+
