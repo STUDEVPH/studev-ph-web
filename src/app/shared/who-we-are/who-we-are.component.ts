@@ -22,22 +22,22 @@ export class WhoWeAreComponent {
 
   controls: ICarousel[] = [
     {
-      title: 'GWAPO NG DEVELOPER',
+      title: 'Lorem Ipsum Dolor',
       description:
         'All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content into see what it look like with these font combinations.',
     },
     {
-      title: 'HINDI AKO NAG BIBIRO',
+      title: 'Lorem Ipsum Dolor',
       description:
         'All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content into see what it look like with these font combinations.',
     },
     {
-      title: 'ANO BA GWAPO NGA AKO',
+      title: 'Lorem Ipsum Dolor',
       description:
         'All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content into see what it look like with these font combinations.',
     },
     {
-      title: 'HAYS GWAPO NGA AKO',
+      title: 'Lorem Ipsum Dolor',
       description:
         'All of this text is editable. Simply click anywhere in the paragraph or heading text and start typing. You can copy and paste your own content into see what it look like with these font combinations.',
     },
