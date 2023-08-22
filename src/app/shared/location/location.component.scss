@@ -1,0 +1,32 @@
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  height: 100vh;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  padding: 0px 5rem;
+
+  .section {
+    color: #000;
+    font-family: Raleway;
+    padding: 2rem;
+
+    h3 {
+      font-size: 32px;
+      font-style: normal;
+      font-weight: 600;
+      line-height: normal;
+      letter-spacing: 1.92px;
+      text-align: left;
+    }
+
+    p {
+      font-size: 1rem;
+      font-style: normal;
+      line-height: 1.5rem;
+      letter-spacing: 0.8px;
+      text-align: justify;
+    }
+  }
+}

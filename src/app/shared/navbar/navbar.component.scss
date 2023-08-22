@@ -1,0 +1,45 @@
+$background: rgba(246, 246, 246, 0.96);
+
+.navbar {
+  background: $background;
+  width: 100%;
+  padding: 0.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+
+  .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img {
+      max-width: 10rem;
+      justify-content: center;
+      align-items: center;
+      margin: auto;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    display: flex;
+    gap: 1rem;
+    font-weight: 550;
+    padding-left: 4rem;
+
+    span {
+      cursor: pointer;
+      border-bottom: 3px solid transparent;
+      width: fit-content;
+
+      &:hover {
+        border-bottom: 3px solid red;
+        border-image: linear-gradient(75deg, #ffc700, #ff0e90, #0ee2ff) 8;
+      }
+    }
+  }
+}

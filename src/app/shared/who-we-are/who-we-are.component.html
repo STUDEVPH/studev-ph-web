@@ -1,0 +1,21 @@
+<div class="content">
+  <div class="image-container">
+    <img class="logo" [src]="logo" alt="logo" />
+  </div>
+  <div class="carousel">
+    <ng-container *ngFor="let control of controls; let i = index">
+      <div *ngIf="isCarouselVisible(i)">
+        <h1>{{ control.title }}</h1>
+        <p>{{ control.description }}</p>
+
+        <div class="select">
+          <span
+            *ngFor="let control of selected; let i = index"
+            [ngClass]="{ selected: control.active }"
+            (click)="setSelected(control, i)"
+          ></span>
+        </div>
+      </div>
+    </ng-container>
+  </div>
+</div>

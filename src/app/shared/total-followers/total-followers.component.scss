@@ -1,0 +1,50 @@
+.background {
+  height: 50vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 2rem 0rem;
+
+  opacity: 2;
+  background: linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0.5) 0%,
+      rgba(0, 0, 0, 0.5) 100%
+    ),
+    radial-gradient(circle, rgba(255, 255, 255, 0) 49%, rgba(0, 0, 0, 0.5) 100%),
+    url(../../../assets/png/admin.jpg),
+    lightgray -4.055px -309.879px / 100% 236.191% no-repeat;
+  background-size: cover;
+
+  .total {
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    padding: 0rem 5rem;
+
+    .box-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.2rem;
+      flex-direction: column;
+
+      .icon {
+        width: 5rem;
+        height: 5rem;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        border-radius: 0.5rem;
+        background: rgba(186, 186, 186, 0.33);
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}

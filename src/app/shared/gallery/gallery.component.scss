@@ -1,0 +1,25 @@
+.images {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 3rem;
+  height: auto;
+
+  text-align: center;
+  object-fit: cover;
+
+  .first-gallery {
+    margin: auto;
+
+    img {
+      padding: 1rem;
+    }
+  }
+
+  .third-gallery {
+    margin: auto;
+
+    img {
+      padding: 1rem 1.3rem;
+    }
+  }
+}
